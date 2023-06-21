@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>criando-experiencia</title>
+</head>
+<body>
+<div>
+    <section class="primeira">
+        <h1>Your thoughts. <b class="cleaner">Cleaner</b></h1>
+        <h3>Bring clarity to your thoughts</h3>
+    </section>
+    
+    <img src="./Delivery.png" alt="image-main">
+
+    <section class="segunda">
+        <button onclick="abrir()" class="Login">Login</button>
+        <br>
+        <a> Singup </a>
+        <p>Terms of service</p>
+    </section>
+    
+    </div>
+    
+    <form>
+        <input placeholder="Email" class="input" type="email">
+        <input placeholder="Senha" class="input" type="password">
+        <input class="enviar" type="submit">
+    </form>
+</body>
+</html>
+
+<script>
+    function abrir(){
+        document.querySelector("form").style.opacity = 1
+        document.querySelector("div").style.opacity = 0.5
+    }
+</script>
